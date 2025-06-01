@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Learn Forms</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your Username: </label>
+            <input type="text" id = "Username" name = "username" placeholder="eg.- xyz@055">
+
+            <label for="password">Enter Password</label>
+            <input type="text" id="password" name="password" placeholder="eg.- xyz123">
+        </div>
+
+        <div>
+            <!-- name ="same rakhne se pta chalta hai ki vo ek type ke hai to any one fill hota hai" -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to receive Emails</label>
+        </div>
+        
+        <div>
+            <label for="comment">Learning is Great? </label><br>
+            <textarea id="comment" name="comment" rows="4" cols="40" placeholder="Comment here!"></textarea>
+        </div>
+
+        <div>
+            <label for="fruits">Your favourite Fruit?</label>
+            <select name="Fruits" id="fruits" aria-placeholder="Fruit?">
+                <option value="" disabled selected>Choose</option>
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
